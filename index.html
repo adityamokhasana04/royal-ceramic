@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Ceramic Industries — Electrical Insulator, Porcelain & Refractory Manufacturer</title>
+
+<!-- SEO -->
+<meta name="description" content="Royal Ceramic Industries manufactures premium electrical porcelain insulators, ceramic components and refractory products in Thangadh, India. Trusted since 1991. ISO-grade quality, export ready." />
+<meta name="keywords" content="electrical insulators, porcelain insulators, ceramic manufacturer, refractory products, industrial ceramics, Thangadh, India" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.royalceramic.example/" /><!-- TODO: replace with live domain -->
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Royal Ceramic Industries — Engineering Reliable Ceramic Solutions" />
+<meta property="og:description" content="Premium electrical porcelain, industrial ceramic insulators and refractory components. Trusted since 1991." />
+<meta property="og:image" content="images/hero-image.webp" />
+<meta property="og:url" content="https://www.royalceramic.example/" /><!-- TODO: replace with live domain -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+<!-- Fonts: Manrope 400–800 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Hero photo is above the fold — fetch it as early as possible -->
+<link rel="preload" as="image" href="images/hero-image.webp" fetchpriority="high">
+
+<link rel="stylesheet" href="css/tailwind.css">
+
+<!-- Flag JS availability so the scroll-reveal system can hide elements safely -->
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Royal Ceramic Industries",
+  "description": "Manufacturer of electrical porcelain insulators, ceramic components and refractory products.",
+  "foundingDate": "1991",
+  "telephone": "+91 9033399957",
+  "email": "sandipmokhasana@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Near Reliance Petrol Pump, Chotila Road",
+    "addressLocality": "Thangadh",
+    "postalCode": "363530",
+    "addressCountry": "IN"
+  },
+  "openingHours": ["Mo-We 08:00-20:00", "Fr-Su 08:00-20:00"]
+}
+</script>
+</head>
+
+<body class="bg-ground font-sans text-ink antialiased">
+
+<!-- Accessibility: skip straight to content -->
+<a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+<!-- Subtle blue glow that follows the cursor (pointer devices only) -->
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- ============================================================
+     1 · ANNOUNCEMENT BAR — auto-scrolling trust marquee
+     ============================================================ -->
+<div id="announce" class="marquee bg-ink text-porcelain/80" aria-label="Company highlights">
+    <div class="marquee__track py-2.5 text-[11px] font-semibold tracking-[0.22em] uppercase">
+        <!-- Track content ×2 for a seamless loop; the copy is decorative -->
+        <ul class="flex shrink-0 items-center" role="list">
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:shield-star-outline"></span>Trusted Since 1991</li>
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:map-marker-outline"></span>Made in India</li>
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:earth"></span>Export Quality</li>
+        </ul>
+        <ul class="flex shrink-0 items-center" role="list" aria-hidden="true">
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:shield-star-outline"></span>Trusted Since 1991</li>
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:map-marker-outline"></span>Made in India</li>
+            <li class="flex items-center gap-2 px-8"><span class="iconify text-sm text-accent" data-icon="mdi:earth"></span>Export Quality</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ============================================================
+     2 · HEADER — transparent over the hero, glass + shrink on scroll
+     ============================================================ -->
+<header class="site-header sticky top-0 z-[80]" id="site-header">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="header-row flex items-center justify-between gap-4">
+
+            <!-- Brand -->
+            <a href="#home" class="flex shrink-0 items-center gap-3" aria-label="Royal Ceramic Industries — home">
+                <span class="brand-chip flex h-11 w-11 items-center justify-center rounded-xl bg-white/95 shadow-sm">
+                    <img src="images/logo.svg" alt="" width="26" height="18" class="h-[18px] w-auto">
+                </span>
+                <span class="brand-name text-lg font-extrabold tracking-tight">Royal Ceramic</span>
+            </a>
+
+            <!-- Desktop navigation -->
+            <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#process">Process</a>
+                <a class="nav-link" href="#industries">Industries</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#news">News</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-2.5">
+                <button type="button" id="search-open" class="icon-btn" aria-label="Search the site" aria-haspopup="dialog">
+                    <span class="iconify text-xl" data-icon="mdi:magnify"></span>
+                </button>
+                <a href="tel:+919033399957" class="icon-btn hidden sm:flex" aria-label="Call +91 90333 99957">
+                    <span class="iconify text-xl" data-icon="mdi:phone-outline"></span>
+                </a>
+                <a href="mailto:sandipmokhasana@gmail.com" class="icon-btn hidden md:flex" aria-label="Email us">
+                    <span class="iconify text-xl" data-icon="mdi:email-outline"></span>
+                </a>
+                <a href="#contact" class="btn-primary magnetic hidden items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-white sm:inline-flex">
+                    Request Quote
+                    <span class="iconify text-base" data-icon="mdi:arrow-right"></span>
+                </a>
+                <button type="button" id="menu-open" class="icon-btn lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="iconify text-2xl" data-icon="mdi:menu"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile navigation panel -->
+<div class="mobile-menu fixed inset-0 z-[90] lg:hidden" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__panel flex h-full flex-col bg-ink/95 px-8 pt-6 pb-10 backdrop-blur-xl">
+        <div class="flex items-center justify-between">
+            <span class="flex items-center gap-3">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/95">
+                    <img src="images/logo.svg" alt="" width="26" height="18" class="h-[18px] w-auto">
+                </span>
+                <span class="text-lg font-extrabold tracking-tight text-white">Royal Ceramic</span>
+            </span>
+            <button type="button" id="menu-close" class="icon-btn icon-btn--dark" aria-label="Close menu">
+                <span class="iconify text-2xl" data-icon="mdi:close"></span>
+            </button>
+        </div>
+
+        <nav class="mt-12 flex flex-col gap-1" aria-label="Mobile">
+            <a class="mobile-link" href="#about">About</a>
+            <a class="mobile-link" href="#products">Products</a>
+            <a class="mobile-link" href="#process">Process</a>
+            <a class="mobile-link" href="#industries">Industries</a>
+            <a class="mobile-link" href="#gallery">Gallery</a>
+            <a class="mobile-link" href="#news">News</a>
+            <a class="mobile-link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="mt-auto flex flex-col gap-3 pt-10">
+            <a href="tel:+919033399957" class="btn-ghost inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-bold text-white">
+                <span class="iconify text-lg" data-icon="mdi:phone-outline"></span>+91 90333 99957
+            </a>
+            <a href="#contact" class="btn-primary inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-bold text-white">
+                Request Quote<span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Search dialog: quick-jump to any section -->
+<dialog id="search-dialog" class="search-dialog" aria-label="Site search">
+    <form method="dialog" class="flex items-center gap-3 border-b border-ink/10 px-5 py-4">
+        <span class="iconify shrink-0 text-xl text-graphite" data-icon="mdi:magnify"></span>
+        <input id="search-input" type="text" placeholder="Search sections, products…" autocomplete="off"
+               class="w-full bg-transparent text-base font-medium outline-none placeholder:text-graphite/50">
+        <button type="submit" class="rounded-lg px-2 py-1 text-xs font-bold text-graphite/70 hover:bg-ink/5" aria-label="Close search">ESC</button>
+    </form>
+    <ul id="search-results" class="max-h-72 overflow-y-auto p-2" role="list"></ul>
+</dialog>
+
+<main id="home">
+
+<!-- ============================================================
+     3 · HERO — full-viewport banner over images/hero-image.webp
+     Layers: photo (parallax) → readability gradient → masked blur
+     → drifting glow → content. Slides under the transparent header.
+     ============================================================ -->
+<section class="hero relative isolate flex flex-col overflow-hidden" aria-labelledby="hero-title">
+
+    <div class="hero__media absolute inset-0 -z-40" role="img"
+         aria-label="Porcelain insulators and industrial ceramic components displayed in a blue industrial hall"></div>
+    <div class="hero__overlay absolute inset-0 -z-30" aria-hidden="true"></div>
+    <div class="hero__overlay-blur absolute inset-0 -z-20" aria-hidden="true"></div>
+    <div class="hero__glow absolute -z-10" aria-hidden="true"></div>
+
+    <div class="hero__inner container relative mx-auto flex w-full grow flex-col justify-center px-6 pt-[calc(var(--header-h)+2.5rem)] pb-16 md:pb-24 lg:px-8 xl:px-10">
+        <div class="mx-auto w-full max-w-[640px] text-center lg:mx-0 lg:text-left">
+
+            <!-- Badge -->
+            <div class="hero-reveal [--reveal-delay:.05s]">
+                <span class="hero-float inline-flex max-w-full items-center gap-2.5 rounded-full border border-accent/30 bg-primary/15 px-4 py-2.5 text-[11px] font-semibold tracking-[0.14em] uppercase text-porcelain backdrop-blur-md sm:px-5 sm:text-xs sm:tracking-[0.18em]">
+                    <span class="iconify shrink-0 text-base text-accent" data-icon="mdi:medal-outline"></span>
+                    Leading Manufacturer Since 1991
+                </span>
+            </div>
+
+            <!-- Headline -->
+            <h1 id="hero-title" class="hero-reveal mt-7 text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.06] font-extrabold tracking-tight text-white [--reveal-delay:.15s]">
+                Engineering<br class="hidden md:inline">
+                <span class="hero__title-gradient">Reliable Ceramic<br class="hidden md:inline"> Solutions</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="hero__sub hero-reveal mx-auto mt-6 max-w-[600px] text-base leading-relaxed text-porcelain/85 sm:text-lg lg:mx-0 [--reveal-delay:.3s]">
+                Royal Ceramic Industries manufactures premium electrical porcelain, industrial ceramic insulators and refractory components engineered for exceptional strength, durability and long-term performance.
+            </p>
+
+            <!-- Feature chips -->
+            <ul class="hero__chips hero-reveal mt-8 flex flex-wrap justify-center gap-3 lg:justify-start [--reveal-delay:.45s]" role="list">
+                <li class="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[13px] font-semibold text-porcelain">
+                    <span class="iconify shrink-0 text-base text-accent" data-icon="mdi:fire"></span>High Temperature Resistant
+                </li>
+                <li class="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[13px] font-semibold text-porcelain">
+                    <span class="iconify shrink-0 text-base text-accent" data-icon="mdi:crosshairs-gps"></span>Precision Engineered
+                </li>
+                <li class="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[13px] font-semibold text-porcelain">
+                    <span class="iconify shrink-0 text-base text-accent" data-icon="mdi:shield-check-outline"></span>Industrial Grade Quality
+                </li>
+                <li class="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[13px] font-semibold text-porcelain">
+                    <span class="iconify shrink-0 text-base text-accent" data-icon="mdi:map-marker-outline"></span>Made in India
+                </li>
+            </ul>
+
+            <!-- Calls to action -->
+            <div class="hero__ctas hero-reveal mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start [--reveal-delay:.6s]">
+                <a href="#products" class="btn-primary magnetic group inline-flex w-full items-center justify-center gap-2.5 rounded-xl px-8 py-4 font-bold text-white sm:w-auto">
+                    Explore Products
+                    <span class="iconify text-lg transition-transform duration-300 group-hover:translate-x-1" data-icon="mdi:arrow-right"></span>
+                </a>
+                <a href="#contact" class="btn-ghost magnetic inline-flex w-full items-center justify-center rounded-xl px-8 py-4 font-bold text-white sm:w-auto">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Statistics -->
+            <ul class="hero__stats hero-reveal mt-12 grid grid-cols-2 gap-3.5 lg:grid-cols-4 [--reveal-delay:.75s]" role="list">
+                <li class="glass-dark rounded-2xl px-4 py-5 text-center">
+                    <span class="block text-[26px] leading-none font-extrabold text-white">30<span class="text-accent">+</span></span>
+                    <span class="mt-2 block text-xs font-medium tracking-wide text-porcelain/70">Years Experience</span>
+                </li>
+                <li class="glass-dark rounded-2xl px-4 py-5 text-center">
+                    <span class="block text-[26px] leading-none font-extrabold text-white">500<span class="text-accent">+</span></span>
+                    <span class="mt-2 block text-xs font-medium tracking-wide text-porcelain/70">Industrial Clients</span>
+                </li>
+                <li class="glass-dark rounded-2xl px-4 py-5 text-center">
+                    <span class="block text-[26px] leading-none font-extrabold text-white">100<span class="text-accent">+</span></span>
+                    <span class="mt-2 block text-xs font-medium tracking-wide text-porcelain/70">Product Variants</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#trusted" class="hero__scroll group absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2.5 text-porcelain/60 transition-colors duration-300 hover:text-porcelain md:flex" aria-label="Scroll down">
+        <span class="text-[11px] font-semibold tracking-[0.28em] uppercase">Scroll</span>
+        <span class="relative h-9 w-[22px] rounded-full border-2 border-current" aria-hidden="true">
+            <span class="hero__mouse-dot absolute top-1.5 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-current"></span>
+        </span>
+    </a>
+</section>
+
+
+
+<!-- ============================================================
+     5 · ABOUT — story, mission, vision, values + experience timeline
+     ============================================================ -->
+<section class="py-20 md:py-28" id="about" aria-labelledby="about-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
+
+            <!-- Image + floating badge -->
+            <div class="relative" data-reveal="right">
+                <div class="overflow-hidden rounded-3xl shadow-[0_30px_70px_rgba(15,23,42,0.18)]">
+                    <img src="images/hero-image.webp" alt="Royal Ceramic production floor with finished porcelain components"
+                         class="img-zoom aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="glass-light absolute -bottom-6 left-6 flex items-center gap-4 rounded-2xl px-6 py-4 shadow-xl">
+                    <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:medal-outline"></span></span>
+                    <span>
+                        <span class="block text-2xl leading-none font-extrabold text-ink">30<span class="text-primary">+</span></span>
+                        <span class="mt-1 block text-xs font-semibold text-graphite">Years of Engineering</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Story -->
+            <div data-reveal="left">
+                <p class="eyebrow"><span class="iconify" data-icon="mdi:factory"></span>About Royal Ceramic Industries</p>
+                <h2 id="about-title" class="section-title mt-4">Three decades of porcelain,<br class="hidden md:inline"> <span class="text-primary">engineered to endure</span></h2>
+                <p class="mt-6 leading-relaxed text-graphite">
+                    Founded in Thangadh — India's historic ceramic town — Royal Ceramic Industries has grown from a family workshop into a trusted manufacturer of electrical insulation components. We support utilities, EPC contractors and industrial buyers with precision manufacturing, disciplined quality control and honest delivery commitments.
+                </p>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                    <div class="glass-light rounded-2xl p-5">
+                        <span class="icon-tile mb-3"><span class="iconify text-xl" data-icon="mdi:bullseye-arrow"></span></span>
+                        <h3 class="font-bold text-ink">Our Mission</h3>
+                        <p class="mt-1.5 text-sm leading-relaxed text-graphite">Deliver durable ceramic solutions that meet demanding electrical standards and keep infrastructure running.</p>
+                    </div>
+                    <div class="glass-light rounded-2xl p-5">
+                        <span class="icon-tile mb-3"><span class="iconify text-xl" data-icon="mdi:eye-outline"></span></span>
+                        <h3 class="font-bold text-ink">Our Vision</h3>
+                        <p class="mt-1.5 text-sm leading-relaxed text-graphite">Become the benchmark for premium electrical ceramics in India through innovation and reliability.</p>
+                    </div>
+                </div>
+
+                <ul class="mt-6 flex flex-wrap gap-2.5" role="list">
+                    <li class="value-chip"><span class="iconify" data-icon="mdi:check-decagram-outline"></span>Integrity</li>
+                    <li class="value-chip"><span class="iconify" data-icon="mdi:cog-outline"></span>Precision</li>
+                    <li class="value-chip"><span class="iconify" data-icon="mdi:handshake-outline"></span>Partnership</li>
+                    <li class="value-chip"><span class="iconify" data-icon="mdi:leaf"></span>Responsibility</li>
+                </ul>
+
+                <a href="#process" class="btn-outline mt-8 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-bold">
+                    Read More<span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Experience timeline -->
+        <ol class="timeline stagger mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4" role="list">
+            <li class="timeline__item" data-reveal="up">
+                <span class="timeline__year">1991</span>
+                <h3 class="mt-2 text-sm font-bold text-ink">Founded in Thangadh</h3>
+                <p class="mt-1 text-xs leading-relaxed text-graphite">A family workshop begins producing porcelain electrical parts.</p>
+            </li>
+            <li class="timeline__item" data-reveal="up">
+                <span class="timeline__year">1998</span>
+                <h3 class="mt-2 text-sm font-bold text-ink">Capacity Expansion</h3>
+                <p class="mt-1 text-xs leading-relaxed text-graphite">New kilns and presses triple monthly output.</p>
+            </li>
+            <li class="timeline__item" data-reveal="up">
+                <span class="timeline__year">2008</span>
+                <h3 class="mt-2 text-sm font-bold text-ink">Quality Systems</h3>
+                <p class="mt-1 text-xs leading-relaxed text-graphite">High quality management and in-house testing lab.</p>
+            </li>
+            <li class="timeline__item" data-reveal="up">
+                <span class="timeline__year">2016</span>
+                <h3 class="mt-2 text-sm font-bold text-ink">Export Markets</h3>
+                <p class="mt-1 text-xs leading-relaxed text-graphite">National shipments to utility contractors.</p>
+            </li>
+            <li class="timeline__item" data-reveal="up">
+                <span class="timeline__year">2024</span>
+                <h3 class="mt-2 text-sm font-bold text-ink">Modernisation</h3>
+                <p class="mt-1 text-xs leading-relaxed text-graphite">Upgraded firing lines for tighter tolerances at scale.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ============================================================
+     6 · WHY CHOOSE US — six premium cards on the tinted ground
+     ============================================================ -->
+<section class="bg-tint py-20 md:py-28" id="why-us" aria-labelledby="why-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:star-four-points-outline"></span>Why Choose Us</p>
+            <h2 id="why-title" class="section-title mt-4">Built on discipline,<br class="hidden sm:inline"> <span class="text-primary">chosen for reliability</span></h2>
+        </div>
+
+        <div class="stagger mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:cog-outline"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">Engineering Excellence</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">Product geometry,  body composition designed around real electrical and mechanical loads.</p>
+            </article>
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:crosshairs-gps"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">High Precision</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">Controlled tolerances across pressing, firing and finishing for a dependable fit, batch after batch.</p>
+            </article>
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:certificate-outline"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">High Quality</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">High quality systems with inspection gates from raw material intake to final dispatch.</p>
+            </article>
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:truck-fast-outline"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">Fast Manufacturing</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">Streamlined production planning keeps standard lines in stock and custom runs on schedule.</p>
+            </article>
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:handshake-outline"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">Reliable Supply</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">Long-term contracts honoured through capacity buffers and honest lead-time commitments.</p>
+            </article>
+            <article class="feature-card" data-reveal="up">
+                <span class="icon-tile"><span class="iconify text-2xl" data-icon="mdi:earth"></span></span>
+                <h3 class="mt-5 text-lg font-bold text-ink">Export Ready</h3>
+                <p class="mt-2 text-sm leading-relaxed text-graphite">Export-grade packing, documentation support and compliance for international projects.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     7 · PRODUCTS — dark stage for the black-background photography,
+     with category filter tabs
+     ============================================================ -->
+<section class="bg-ink py-20 md:py-28" id="products" aria-labelledby="products-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
+            <div data-reveal="up">
+                <p class="eyebrow eyebrow--dark"><span class="iconify" data-icon="mdi:cube-outline"></span>Our Products</p>
+                <h2 id="products-title" class="section-title mt-4 text-white">Precision components,<br class="hidden sm:inline"> <span class="hero__title-gradient">fired to perfection</span></h2>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filter products by category" data-reveal="up">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-filter="electrical">Electrical</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-filter="porcelain">Porcelain</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-filter="refractory">Refractory</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-filter="industrial">Industrial</button>
+            </div>
+        </div>
+
+        <div class="stagger mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" id="product-grid">
+
+            <article class="product-card" data-category="electrical" data-reveal="up">
+                <div class="product-card__media">
+                    <img src="images/product1.jpeg" alt="Triangle modular socket in electrical-grade porcelain" class="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async">
+                    <span class="product-card__badge">Electrical</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="text-lg font-bold text-white">Triangle Modular Socket</h3>
+                    <p class="mt-1.5 text-sm leading-relaxed text-porcelain/70">16A / 240V AC modular socket body with high dielectric strength and long service life.</p>
+                    <a href="#contact" class="product-card__link">Learn More<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="porcelain" data-reveal="up">
+                <div class="product-card__media">
+                    <img src="images/product2.jpeg" alt="Electrical porcelain insulator" class="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async">
+                    <span class="product-card__badge">Porcelain</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="text-lg font-bold text-white">Porcelain Insulator</h3>
+                    <p class="mt-1.5 text-sm leading-relaxed text-porcelain/70">Precision-engineered insulator for dependable performance in power distribution systems.</p>
+                    <a href="#contact" class="product-card__link">Learn More<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="electrical" data-reveal="up">
+                <div class="product-card__media">
+                    <img src="images/product3.jpeg" alt="32AM half DP switch ceramic base" class="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async">
+                    <span class="product-card__badge">Electrical</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="text-lg font-bold text-white">32AM Half DP Switch</h3>
+                    <p class="mt-1.5 text-sm leading-relaxed text-porcelain/70">Heavy-duty ceramic switch base built for robust industrial electrical assemblies.</p>
+                    <a href="#contact" class="product-card__link">Learn More<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="porcelain" data-reveal="up">
+                <div class="product-card__media">
+                    <img src="images/product4.jpeg" alt="Half DP S porcelain component" class="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async">
+                    <span class="product-card__badge">Porcelain</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="text-lg font-bold text-white">Half DP S</h3>
+                    <p class="mt-1.5 text-sm leading-relaxed text-porcelain/70">Precision-moulded component with dimensional accuracy and a premium glazed finish.</p>
+                    <a href="#contact" class="product-card__link">Learn More<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+
+           
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     8 · MANUFACTURING PROCESS — horizontal timeline with a
+     connecting line, revealed step by step
+     ============================================================ -->
+<section class="py-20 md:py-28" id="process" aria-labelledby="process-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:transit-connection-variant"></span>Manufacturing Process</p>
+            <h2 id="process-title" class="section-title mt-4">From raw earth to<br class="hidden sm:inline"> <span class="text-primary">certified components</span></h2>
+        </div>
+
+        <ol class="process stagger mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-5" role="list">
+            <li class="process__step" data-reveal="up">
+                <span class="process__node"><span class="iconify text-xl" data-icon="mdi:layers-triple-outline"></span></span>
+                <span class="process__num">01</span>
+                <h3 class="mt-2 font-bold text-ink">Raw Material</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-graphite">Premium clay bodies selected and blended for strength and consistency.</p>
+            </li>
+            <li class="process__step" data-reveal="up">
+                <span class="process__node"><span class="iconify text-xl" data-icon="mdi:shape-outline"></span></span>
+                <span class="process__num">02</span>
+                <h3 class="mt-2 font-bold text-ink">Pressing</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-graphite">Precision pressing and finishing for complex, repeatable geometries.</p>
+            </li>
+            <li class="process__step" data-reveal="up">
+                <span class="process__node"><span class="iconify text-xl" data-icon="mdi:fire"></span></span>
+                <span class="process__num">03</span>
+                <h3 class="mt-2 font-bold text-ink">Kiln Firing</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-graphite">Controlled high-temperature firing develops the ceramic's hardness.</p>
+            </li>
+            <li class="process__step" data-reveal="up">
+                <span class="process__node"><span class="iconify text-xl" data-icon="mdi:flask-outline"></span></span>
+                <span class="process__num">04</span>
+                <h3 class="mt-2 font-bold text-ink">Quality Testing</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-graphite">Electrical and mechanical testing against the applicable standards.</p>
+            </li>
+            <li class="process__step" data-reveal="up">
+                <span class="process__node"><span class="iconify text-xl" data-icon="mdi:package-variant-closed"></span></span>
+                <span class="process__num">05</span>
+                <h3 class="mt-2 font-bold text-ink">Packaging</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-graphite">Secure, export-grade packing for safe transit to project sites.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ============================================================
+     9 · INDUSTRIES WE SERVE — icon cards on tinted ground
+     ============================================================ -->
+<section class="bg-tint py-20 md:py-28" id="industries" aria-labelledby="industries-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:domain"></span>Industries We Serve</p>
+            <h2 id="industries-title" class="section-title mt-4">One material,<br class="hidden sm:inline"> <span class="text-primary">many demanding sectors</span></h2>
+        </div>
+
+        <div class="stagger mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+            <a href="#contact" class="industry-card" data-reveal="up">
+                <span class="iconify text-3xl text-primary" data-icon="mdi:transmission-tower"></span>
+                <span class="mt-3 text-sm font-bold text-ink">Power</span>
+            </a>
+     
+            <a href="#contact" class="industry-card" data-reveal="up">
+                <span class="iconify text-3xl text-primary" data-icon="mdi:light-switch"></span>
+                <span class="mt-3 text-sm font-bold text-ink">Switches</span>
+            </a>
+         
+        
+            <a href="#contact" class="industry-card" data-reveal="up">
+                <span class="iconify text-3xl text-primary" data-icon="mdi:flash-outline"></span>
+                <span class="mt-3 text-sm font-bold text-ink">Energy</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     10 · FACTORY STATISTICS — animated counters on a blue band
+     ============================================================ -->
+<section class="stats-band relative overflow-hidden py-20 md:py-24" aria-label="Factory statistics">
+    <div class="container relative mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="stagger grid grid-cols-2 gap-5 lg:grid-cols-4">
+            <div class="stat-card" data-reveal="up">
+                <span class="iconify text-3xl text-white/80" data-icon="mdi:calendar-star"></span>
+                <span class="mt-3 block text-4xl font-extrabold text-white md:text-5xl"><span data-counter="1991">0</span></span>
+                <span class="mt-1.5 block text-sm font-semibold text-white/70">Years — Established</span>
+            </div>
+            <div class="stat-card" data-reveal="up">
+                <span class="iconify text-3xl text-white/80" data-icon="mdi:account-group-outline"></span>
+                <span class="mt-3 block text-4xl font-extrabold text-white md:text-5xl"><span data-counter="500">0</span>+</span>
+                <span class="mt-1.5 block text-sm font-semibold text-white/70">Industrial Clients</span>
+            </div>
+            <div class="stat-card" data-reveal="up">
+                <span class="iconify text-3xl text-white/80" data-icon="mdi:earth"></span>
+                <span class="mt-3 block text-4xl font-extrabold text-white md:text-5xl"><span data-counter="50">0</span>+</span>
+                <span class="mt-1.5 block text-sm font-semibold text-white/70">Companies Reached</span>
+            </div>
+            <div class="stat-card" data-reveal="up">
+                <span class="iconify text-3xl text-white/80" data-icon="mdi:cube-outline"></span>
+                <span class="mt-3 block text-4xl font-extrabold text-white md:text-5xl"><span data-counter="100">0</span>+</span>
+                <span class="mt-1.5 block text-sm font-semibold text-white/70">Product Variants</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ============================================================
+     12 · GALLERY — masonry on the dark stage, with lightbox
+     ============================================================ -->
+<section class="bg-ink py-20 md:py-28" id="gallery" aria-labelledby="gallery-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow eyebrow--dark mx-auto"><span class="iconify" data-icon="mdi:image-multiple-outline"></span>Gallery</p>
+            <h2 id="gallery-title" class="section-title mt-4 text-white">Inside the <span class="hero__title-gradient">workshop</span></h2>
+        </div>
+
+        <div class="masonry mt-12" data-reveal="up">
+            <button type="button" class="gallery-item" data-caption="Finished components staged in the production hall">
+                <img src="images/hero-image.webp" alt="Finished ceramic components staged in the production hall" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="gallery-item" data-caption="Triangle modular socket — studio detail">
+                <img src="images/product1.jpeg" alt="Triangle modular socket studio photograph" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="gallery-item" data-caption="Porcelain insulator — glazed finish">
+                <img src="images/product2.jpeg" alt="Porcelain insulator studio photograph" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="gallery-item" data-caption="32AM half DP switch base">
+                <img src="images/product3.jpeg" alt="32AM half DP switch base studio photograph" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="gallery-item" data-caption="Half DP S — dimensional precision">
+                <img src="images/product4.jpeg" alt="Half DP S component studio photograph" loading="lazy" decoding="async">
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox dialog (shared by the gallery) -->
+<dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+    <button type="button" id="lightbox-close" class="lightbox__close" aria-label="Close image viewer">
+        <span class="iconify text-2xl" data-icon="mdi:close"></span>
+    </button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption" class="mt-4 text-center text-sm font-medium text-porcelain/80"></p>
+</dialog>
+
+<!-- ============================================================
+     13 · TESTIMONIALS — auto-advancing glass slider
+     ============================================================ -->
+<section class="bg-tint py-20 md:py-28" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:format-quote-open"></span>Testimonials</p>
+            <h2 id="testimonials-title" class="section-title mt-4">Partners who<br class="hidden sm:inline"> <span class="text-primary">stay with us</span></h2>
+        </div>
+
+        <div class="no-scrollbar mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-2" id="testimonial-slider" data-reveal="up">
+            <figure class="t-card">
+                <div class="flex items-center gap-1 text-amber-400" aria-label="Rated 5 out of 5">
+                    <span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span>
+                </div>
+                <blockquote class="mt-4 text-sm leading-relaxed text-graphite">"Royal Ceramic provides the highest quality insulators. Their products have consistently met our demanding specifications and deadlines."</blockquote>
+                <figcaption class="mt-5 flex items-center gap-3">
+                    <span class="avatar">RK</span>
+                    <span><span class="block text-sm font-bold text-ink">Rajesh Kumar</span><span class="block text-xs text-graphite">Power Distribution Manager</span></span>
+                </figcaption>
+            </figure>
+            <figure class="t-card">
+                <div class="flex items-center gap-1 text-amber-400" aria-label="Rated 5 out of 5">
+                    <span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span>
+                </div>
+                <blockquote class="mt-4 text-sm leading-relaxed text-graphite">"We've been using Royal Ceramic's products for over 5 years. The reliability and durability are outstanding. They're our trusted partner."</blockquote>
+                <figcaption class="mt-5 flex items-center gap-3">
+                    <span class="avatar">PS</span>
+                    <span><span class="block text-sm font-bold text-ink">Priya Sharma</span><span class="block text-xs text-graphite">Technical Director</span></span>
+                </figcaption>
+            </figure>
+            <figure class="t-card">
+                <div class="flex items-center gap-1 text-amber-400" aria-label="Rated 5 out of 5">
+                    <span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span>
+                </div>
+                <blockquote class="mt-4 text-sm leading-relaxed text-graphite">"Excellent service and premium quality products. Royal Ceramic understands our requirements perfectly. Best insulators in the industry."</blockquote>
+                <figcaption class="mt-5 flex items-center gap-3">
+                    <span class="avatar">AP</span>
+                    <span><span class="block text-sm font-bold text-ink">Amit Patel</span><span class="block text-xs text-graphite">Operations Lead</span></span>
+                </figcaption>
+            </figure>
+            <figure class="t-card">
+                <div class="flex items-center gap-1 text-amber-400" aria-label="Rated 5 out of 5">
+                    <span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span>
+                </div>
+                <blockquote class="mt-4 text-sm leading-relaxed text-graphite">"The precision and attention to detail in their manufacturing is exceptional. Zero defects, on-time delivery every time."</blockquote>
+                <figcaption class="mt-5 flex items-center gap-3">
+                    <span class="avatar">VS</span>
+                    <span><span class="block text-sm font-bold text-ink">Dr. Vikram Singh</span><span class="block text-xs text-graphite">Chief Engineer</span></span>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="mt-7 flex justify-center gap-2.5" id="testimonial-dots" role="tablist" aria-label="Choose testimonial"></div>
+    </div>
+</section>
+
+<!-- ============================================================
+     14 · LATEST NEWS — three editorial cards
+     ============================================================ -->
+<section class="py-20 md:py-28" id="news" aria-labelledby="news-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:newspaper-variant-outline"></span>Latest News</p>
+            <h2 id="news-title" class="section-title mt-4">From the <span class="text-primary">factory floor</span></h2>
+        </div>
+
+        <div class="stagger mt-12 grid gap-6 md:grid-cols-3">
+            <article class="news-card" data-reveal="up">
+                <div class="news-card__media">
+                    <img src="images/product2.jpeg" alt="Porcelain insulator" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                    <p class="flex items-center gap-2 text-xs font-semibold text-graphite/70">
+                        <span class="iconify text-sm text-primary" data-icon="mdi:calendar-outline"></span>March 2026 · Milestones
+                    </p>
+                    <h3 class="mt-3 text-lg leading-snug font-bold text-ink">Royal Ceramic crosses 500 industrial clients</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-graphite">A look at the partnerships behind four decades of steady growth in electrical porcelain.</p>
+                    <a href="#contact" class="news-card__link">Read Article<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+            <article class="news-card" data-reveal="up">
+                <div class="news-card__media">
+                    <img src="images/hero-image.webp" alt="Ceramic components in the production hall" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                    <p class="flex items-center gap-2 text-xs font-semibold text-graphite/70">
+                        <span class="iconify text-sm text-primary" data-icon="mdi:calendar-outline"></span>February 2026 · Engineering
+                    </p>
+                    <h3 class="mt-3 text-lg leading-snug font-bold text-ink">Inside our kiln: how porcelain gets its strength</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-graphite">Why controlled firing curves matter more than anything else in electrical ceramics.</p>
+                    <a href="#contact" class="news-card__link">Read Article<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+            <article class="news-card" data-reveal="up">
+                <div class="news-card__media">
+                    <img src="images/product3.jpeg" alt="32AM half DP switch base" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                    <p class="flex items-center gap-2 text-xs font-semibold text-graphite/70">
+                        <span class="iconify text-sm text-primary" data-icon="mdi:calendar-outline"></span>January 2026 · Products
+                    </p>
+                    <h3 class="mt-3 text-lg leading-snug font-bold text-ink">New modular socket line enters production</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-graphite">Tighter tolerances and a quality for our best-selling socket family.</p>
+                    <a href="#contact" class="news-card__link">Read Article<span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     15 · CALL TO ACTION — full-bleed gradient band
+     ============================================================ -->
+<section class="cta-band relative overflow-hidden py-20 md:py-28" aria-labelledby="cta-title">
+    <div class="container stagger relative mx-auto px-6 text-center lg:px-8 xl:px-10">
+        <p class="eyebrow eyebrow--dark mx-auto" data-reveal="up"><span class="iconify" data-icon="mdi:rocket-launch-outline"></span>Start a Project</p>
+        <h2 id="cta-title" class="section-title mx-auto mt-4 max-w-3xl text-white" data-reveal="up">
+            Ready to power your next project with <span class="hero__title-gradient">proven ceramics?</span>
+        </h2>
+        <p class="mx-auto mt-5 max-w-xl text-porcelain/80" data-reveal="up">
+            Send us your drawings or specifications — our engineering team responds within one business day.
+        </p>
+        <div class="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row" data-reveal="up">
+            <a href="#contact" class="btn-primary magnetic inline-flex w-full items-center justify-center gap-2.5 rounded-xl px-8 py-4 font-bold text-white sm:w-auto">
+                Request a Quote<span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
+            </a>
+            <a href="https://wa.me/919033399957" target="_blank" rel="noopener noreferrer" class="btn-ghost magnetic inline-flex w-full items-center justify-center gap-2.5 rounded-xl px-8 py-4 font-bold text-white sm:w-auto">
+                <span class="iconify text-lg" data-icon="mdi:whatsapp"></span>Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     16 · CONTACT — info cards, form (EmailJS/Gmail flow), map
+     ============================================================ -->
+<section class="py-20 md:py-28" id="contact" aria-labelledby="contact-title">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+        <div class="mx-auto max-w-2xl text-center" data-reveal="up">
+            <p class="eyebrow mx-auto"><span class="iconify" data-icon="mdi:chat-outline"></span>Contact</p>
+            <h2 id="contact-title" class="section-title mt-4">Let's talk about<br class="hidden sm:inline"> <span class="text-primary">your requirements</span></h2>
+        </div>
+
+        <div class="mt-14 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-14">
+
+            <!-- Contact details -->
+            <div class="flex flex-col gap-4" data-reveal="right">
+                <a href="tel:+919033399957" class="contact-card">
+                    <span class="icon-tile"><span class="iconify text-xl" data-icon="mdi:phone-outline"></span></span>
+                    <span>
+                        <span class="block text-sm font-bold text-ink">Phone</span>
+                        <span class="mt-0.5 block text-sm text-graphite">+91 90333 99957</span>
+                    </span>
+                    <span class="iconify ml-auto text-lg text-graphite/40" data-icon="mdi:arrow-top-right"></span>
+                </a>
+                <a href="mailto:sandipmokhasana@gmail.com" class="contact-card">
+                    <span class="icon-tile"><span class="iconify text-xl" data-icon="mdi:email-outline"></span></span>
+                    <span>
+                        <span class="block text-sm font-bold text-ink">Email</span>
+                        <span class="mt-0.5 block text-sm text-graphite">sandipmokhasana@gmail.com</span>
+                    </span>
+                    <span class="iconify ml-auto text-lg text-graphite/40" data-icon="mdi:arrow-top-right"></span>
+                </a>
+                <div class="contact-card">
+                    <span class="icon-tile"><span class="iconify text-xl" data-icon="mdi:map-marker-outline"></span></span>
+                    <span>
+                        <span class="block text-sm font-bold text-ink">Address</span>
+                        <span class="mt-0.5 block text-sm leading-relaxed text-graphite">Near Reliance Petrol Pump, Chotila Road,<br>Thangadh — 363530, Gujarat</span>
+                    </span>
+                </div>
+                <div class="contact-card">
+                    <span class="icon-tile"><span class="iconify text-xl" data-icon="mdi:clock-outline"></span></span>
+                    <span>
+                        <span class="block text-sm font-bold text-ink">Working Hours</span>
+                        <span class="mt-0.5 block text-sm leading-relaxed text-graphite">Mon–Wed &amp; Fri–Sun: 8 AM – 8 PM<br>Thursday: Closed</span>
+                    </span>
+                </div>
+
+                <!-- Map -->
+                <div class="mt-2 overflow-hidden rounded-2xl border border-ink/10 shadow-lg">
+                    <iframe
+                        class="h-[260px] w-full border-0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291.09438140815154!2d71.20138657361893!3d22.565307039473918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39590be55e03fa81%3A0x4157db808e730d46!2sRoyal%20Ceramic%20-%20Thangadh!5e0!3m2!1sen!2sus!4v1700000000000"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Royal Ceramic location map — Thangadh, Gujarat">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="glass-light rounded-3xl p-6 md:p-9" data-reveal="left">
+                <h3 class="text-xl font-bold text-ink">Send us a message</h3>
+                <p class="mt-1 text-sm text-graphite">Required fields are marked with an asterisk.</p>
+                <form id="contact-form" class="mt-6" novalidate>
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <div>
+                            <label class="field-label" for="name">Name *</label>
+                            <input class="field" type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label class="field-label" for="company">Company</label>
+                            <input class="field" type="text" id="company" name="company" autocomplete="organization">
+                        </div>
+                        <div>
+                            <label class="field-label" for="email">Email *</label>
+                            <input class="field" type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label class="field-label" for="phone">Phone</label>
+                            <input class="field" type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="field-label" for="subject">Subject *</label>
+                            <input class="field" type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="field-label" for="message">Message *</label>
+                            <textarea class="field" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary magnetic mt-6 inline-flex w-full items-center justify-center gap-2.5 rounded-xl px-8 py-4 font-bold text-white sm:w-auto">
+                        Send Message<span class="iconify text-lg" data-icon="mdi:send-outline"></span>
+                    </button>
+                    <p id="contact-status" class="mt-4 text-sm font-medium" role="status" aria-live="polite"></p>
+                    <p class="mt-2 text-xs text-graphite/80">
+                        Prefer your own email app? <a href="mailto:sandipmokhasana@gmail.com" class="font-semibold text-primary underline underline-offset-2">Email us directly</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     17 · FOOTER — newsletter, link columns, socials, legal
+     ============================================================ -->
+<footer class="bg-ink text-porcelain/70">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-10">
+
+        <!-- Newsletter row -->
+        <div class="flex flex-col items-start justify-between gap-6 border-b border-white/10 py-12 md:flex-row md:items-center">
+            <div>
+                <h2 class="text-xl font-extrabold text-white">Stay in the loop</h2>
+                <p class="mt-1 text-sm">Product releases, capacity updates and industry notes. No spam.</p>
+            </div>
+            <form id="newsletter-form" class="flex w-full max-w-md gap-2.5" novalidate>
+                <label class="sr-only" for="newsletter-email">Email address</label>
+                <input class="field field--dark" type="email" id="newsletter-email" name="newsletter-email" placeholder="you@company.com" autocomplete="email" required>
+                <button type="submit" class="btn-primary inline-flex shrink-0 items-center gap-2 rounded-xl px-5 py-3 text-sm font-bold text-white" aria-label="Subscribe to newsletter">
+                    Subscribe<span class="iconify text-base" data-icon="mdi:send-outline"></span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Link columns -->
+        <div class="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+            <div>
+                <span class="flex items-center gap-3">
+                    <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/95">
+                        <img src="images/logo.svg" alt="" width="26" height="18" class="h-[18px] w-auto">
+                    </span>
+                    <span class="text-lg font-extrabold tracking-tight text-white">Royal Ceramic</span>
+                </span>
+                <p class="mt-4 max-w-xs text-sm leading-relaxed">
+                    Electrical insulator, porcelain &amp; refractories manufacturer. Engineering reliable ceramic solutions since 1991.
+                </p>
+                <div class="mt-5 flex gap-2.5">
+                    <a href="https://wa.me/919033399957" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--dark" aria-label="WhatsApp"><span class="iconify text-lg" data-icon="mdi:whatsapp"></span></a>
+                    <a href="https://www.linkedin.com/in/royal-ceramic-thangadh" class="icon-btn icon-btn--dark" aria-label="LinkedIn"><span class="iconify text-lg" data-icon="mdi:linkedin"></span></a>
+                    <a href="https://www.instagram.com/royalceramic_/" class="icon-btn icon-btn--dark" aria-label="Instagram"><span class="iconify text-lg" data-icon="mdi:instagram"></span></a>
+                </div>
+            </div>
+
+            <nav aria-label="Quick links">
+                <h3 class="text-sm font-bold tracking-wider text-white uppercase">Quick Links</h3>
+                <ul class="mt-4 space-y-2.5" role="list">
+                    <li><a class="footer-link" href="#about">About Us</a></li>
+                    <li><a class="footer-link" href="#process">Manufacturing Process</a></li>
+                    <li><a class="footer-link" href="#industries">Industries</a></li>
+                    <li><a class="footer-link" href="#gallery">Gallery</a></li>
+                    <li><a class="footer-link" href="#news">News</a></li>
+                    <li><a class="footer-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Products">
+                <h3 class="text-sm font-bold tracking-wider text-white uppercase">Products</h3>
+                <ul class="mt-4 space-y-2.5" role="list">
+                    <li><a class="footer-link" href="#about">Electrical Insulators</a></li>
+                    <li><a class="footer-link" href="#gallery">Porcelain Components</a></li>
+                    <li><a class="footer-link" href="#products">Refractory Products</a></li>
+                    <li><a class="footer-link" href="#process">Industrial Ceramic Parts</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h3 class="text-sm font-bold tracking-wider text-white uppercase">Contact</h3>
+                <ul class="mt-4 space-y-3 text-sm" role="list">
+                    <li class="flex gap-2.5"><span class="iconify mt-0.5 shrink-0 text-accent" data-icon="mdi:phone-outline"></span>+91 90333 99957</li>
+                    <li class="flex gap-2.5"><span class="iconify mt-0.5 shrink-0 text-accent" data-icon="mdi:email-outline"></span>sandipmokhasana@gmail.com</li>
+                    <li class="flex gap-2.5"><span class="iconify mt-0.5 shrink-0 text-accent" data-icon="mdi:map-marker-outline"></span>Near Reliance Petrol Pump, Chotila Road, Thangadh — 363530</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-xs sm:flex-row">
+            <p>© <span id="footer-year">2026</span> Royal Ceramic Industries. All rights reserved.</p>
+            <p class="tracking-[0.18em] uppercase">Electrical Insulator · Porcelain · Refractories</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.2.1/iconify.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
